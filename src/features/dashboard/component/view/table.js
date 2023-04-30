@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import DataTable from 'datatables.net-dt';
+// import DataTable from 'datatables.net-dt';
 // import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
-import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
+// import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 import './table.css'
 import Update from '../update/update';
 import handlefetch from '../../services/read/handlefetch';
@@ -17,22 +17,13 @@ export default function RTable() {
 
   const [items, setItems] = useState([])
 
-  async function handlefetching(change) {
+  async function handlefetching() {
     let data = await handlefetch()
     setItems(data)
-    if (data) {
-      setTimeout(function () {
-        // eslint-disable-next-line
-        let table = new DataTable('#myTable', {
-          responsive: true,
-          bDestroy: true
-        })
-
-      }, 1000);
-    }
+    
   }
   useEffect(() => {
-    handlefetching(0)
+    handlefetching()
     // return () => {
 
     // }

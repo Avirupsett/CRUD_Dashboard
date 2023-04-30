@@ -12,13 +12,14 @@ color: var(--text-color);
 .mui-datatables-l4u8b9-MuiInputBase-root-MuiInput-root:after ,.mui-datatables-l4u8b9-MuiInputBase-root-MuiInput-root:before {
     border-bottom-color: var(--text-color) !important;
 }
-.mui-datatables-i4bv87-MuiSvgIcon-root {
+.MuiSvgIcon-root {
     color: var(--text-color);
 }
 .tss-1h5wt30-MUIDataTableSearch-searchIcon{
     color: var(--text-color) !important;
 }
-.mui-datatables-apqrd9-MuiTableBody-root{
+
+.MuiPaper-root ,.MuiPaper-elevation ,.MuiPaper-rounded ,.MuiPaper-elevation4 {
     background-color: var(--primary-color) !important;
 }
 .tss-iwylj0-MUIDataTableBodyCell-responsiveStackedSmallParent {
@@ -31,7 +32,7 @@ color: var(--text-color);
 .mui-datatables-1q1u3t4-MuiTableRow-root{
     background-color: var(--primary-color);
 }
-.mui-datatables-jtlhu6-MuiTablePagination-root:last-child {
+.MuiTablePagination-root  {
     color: var(--text-color);
 }
 .tss-bd2lw8-MUIDataTableHeadCell-sortActive{
@@ -51,4 +52,7 @@ color: var(--text-color);
 }
 .tss-1fz4yw6-MUIDataTableSelectCell-fixedLeft{
     position: unset !important;
+}
+.MuiTypography-root {
+    color: var(--text-color) !important;
 }
