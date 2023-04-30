@@ -1,0 +1,41 @@
+.form-group label{
+    color: var(--text-color);
+}
+.add_name{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    transition: 0.4s;
+    opacity: 1;
+}
+.add_icon div{
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.add_icon{
+    display: flex;
+    color: var(--text-color);
+  height: 100%;
+  width: fit-content;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  padding: 2px;
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.43, var(--blue-color)), color-stop(0.87, var(--pink-color)));
+  /* background-image: -moz-linear-gradient(center bottom, rgb(14,173,173) 33%, rgb(0,255,255) 67% ); */
+}
+.add_icon div{
+    padding: 8px 22px;
+}
+.add_icon:hover div{
+    transition: all 0.5s ease;
+    background: var(--text-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.add_icon:hover .add_name{
+    color: var(--primary-color);
+}
