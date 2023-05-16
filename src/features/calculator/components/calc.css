@@ -1,0 +1,47 @@
+.container-2 {
+  padding-top: 30px;
+}
+  .calc-body {
+    width: 90%;
+    border: solid 1px var(--primary-color);
+    box-shadow: 0 8px 50px -7px var(--box-shadow-color);
+    background-color: var(--primary-color);
+    position: fixed;
+    bottom: 0;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+  
+  .cal-box{
+    background-color: var(--primary-color) !important;
+    color: var(--text-color) !important;
+}
+.calc-val{
+  overflow-y: auto;
+  height: 200px;
+  overscroll-behavior-y: contain;
+}
+.action_update_icon{
+  border-radius: 12px;
+align-items: center;
+text-decoration: none;
+transition: all 0.4s ease;
+padding: 2px;
+background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0.43, var(--blue-color)), color-stop(0.87, var(--pink-color)));
+}
+.action_update_icon:hover div{
+  transition: all 0.5s ease;
+  background: var(--text-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.action_update_icon div{
+  background: var(--primary-color);
+  border-radius: 10px;
+  padding: 8px 22px;
+  color: var(--text-color);
+}
+.input-box{
+  background-color: var(--primary-color) !important;
+  color: var(--text-color) !important;
+}

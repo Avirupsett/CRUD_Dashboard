@@ -3,6 +3,8 @@ import { MdEdit, MdOutlineCancel } from 'react-icons/md'
 import './update.css'
 import { Modal } from 'react-responsive-modal'
 import updated from '../../services/update/handleupdate'
+import 'react-toastify/dist/ReactToastify.css';
+import {ToastContainer, toast } from 'react-toastify';
 
 
 export default function Update(props) {
@@ -20,16 +22,35 @@ export default function Update(props) {
   async function handleupdate(id,name,email,gender,status) {
     const query = await updated(id,name,email,gender,status)
     if (query.status === 200) {
-      alert("Successful")
+      toast.success('Successfully Updated!', {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
       props.handleUpdateItem(id,name,email,gender,status)
     }
     else {
-      alert("UnSuccessful")
+      toast.error('UnSuccessful!', {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
     }
   }
 
   return (
     <div className=''>
+      <ToastContainer/>
       <div className='action_icon' onClick={onOpenModal}>
         <div>
 

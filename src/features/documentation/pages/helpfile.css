@@ -1,0 +1,13 @@
+.bg-help{
+    background-color: var(--primary-color);
+    padding: 15px 10px !important;
+    border-radius: 0.375rem;
+    min-height: 70vh;
+}
+.title-help{
+  color: var(--blue-color);
+  line-height: 1.4;
+}
+.content-help{
+  color: var(--text-color);
+}

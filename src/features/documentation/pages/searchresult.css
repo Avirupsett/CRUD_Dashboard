@@ -1,0 +1,23 @@
+.search-result{
+    margin: 10px 5px;
+    border-radius: 0.375rem;
+    list-style: none;
+    padding: 15px;
+    border-bottom-left-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    background: var(--primary-color);
+    box-shadow: 0 8px 50px -7px var(--box-shadow-color);
+    cursor: pointer;
+}
+.search-result:hover{
+    background: var(--third-color);
+    cursor: pointer;
+  }
+  .result-title {
+    color: var(--blue-color);
+    font-weight: 600;
+  }
+  
+  .result-content {
+    color: var(--text-color);
+  }

@@ -48,11 +48,26 @@ color: var(--text-color);
     color: var(--text-color) !important;
 }
 .tss-1cdcmys-MUIDataTable-responsiveBase{
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
 .tss-1fz4yw6-MUIDataTableSelectCell-fixedLeft{
     position: unset !important;
 }
 .MuiTypography-root {
     color: var(--text-color) !important;
+}
+.MuiButtonBase-root,.MuiInputBase-root,.MuiFormLabel-root{
+    color: var(--text-color) !important;
+}
+.tss-ynxllk-MUIDataTableFilter-root,.MuiTableCell-footer{
+    background-color: var(--secondary-color) !important;
+}
+.MuiTableCell-root {
+    border-color:var(--disabled-color);
+}
+.MuiTablePagination-selectLabel,.MuiTablePagination-displayedRows{
+    margin-bottom: 5px !important;
+}
+.MuiTableRow-root,.tss-1cibt4j-MUIDataTableBodyRow-root-MUIDataTableBody-lastStackedCell{
+    border-color: var(--text-color) !important;
 }
